@@ -1,39 +1,42 @@
-## Project Name
-Skinry
+# Skinry
 
-## One-Line Description
 A decentralized marketplace for trading in-game skins as Stellar classic assets.
 
-## Track
-Track 3: DeFi, Stablecoins & Real-World Assets
-
-## Problem It Solves
+## Problem
 In-game skins are currently trapped in "walled gardens," meaning players do not truly own the items they purchase and cannot easily trade them outside of specific platforms. This lack of interoperability and liquidity limits the value of digital assets for players. Skinry solves this by issuing skins as Stellar classic assets, allowing them to be freely traded on the Stellar Decentralized Exchange (SDEX).
+
+## How It Works
+1. **Issuance:** Game developers (Issuer) mint skin assets and transfer them to a Distributor account.
+2. **Listing:** The Distributor lists these skins on the Stellar Decentralized Exchange (SDEX) by creating sell offers for XLM.
+3. **Browsing:** Users browse the marketplace via the Skinry React frontend, which displays available skins from the SDEX order book.
+4. **Purchase:** Users connect their Freighter wallet and execute a trade on the SDEX to acquire skins instantly and securely.
 
 ## How It Uses Stellar
 Skinry leverages the following Stellar primitives:
 - **Classic Assets:** Each skin is represented as a Stellar asset, ensuring compatibility with the entire Stellar ecosystem.
 - **SDEX (Stellar Decentralized Exchange):** Provides a built-in marketplace where skins can be traded against XLM or other assets without a centralized intermediary.
 - **Stellar SDK:** Used for creating asset issuance transactions, setting up trustlines, and managing marketplace offers.
-- **SEP-1 (Stellar Info File):** To provide metadata and branding for the skin assets.
+- **SEP-1 (Stellar Info File):** Provides metadata and branding for the skin assets, making them recognizable across the ecosystem.
 
-## GitHub Repository
-[https://github.com/LioNyde/Skinry---Character-Skin-Marketplace](https://github.com/LioNyde/Skinry---Character-Skin-Marketplace)
-
-## Network & Deployment
-- Network: Testnet
-- Live app URL: runs locally — see README
-- Contract IDs / asset issuers: GA645QP3GUXULRIK3R3Z2VTVECFWYTHT7YGM2XEEUYRWK7GRXXD6L42A
+## Track
+Track 3: DeFi, Stablecoins & Real-World Assets
 
 ## Tech Stack
-- Frontend: React + TypeScript (Vite)
-- Stellar SDK: `@stellar/stellar-sdk` & `@stellar/freighter-api`
-- Backend: Node.js (Issuance Scripts)
+- Framework: React + TypeScript (Vite)
+- Stellar SDK: `@stellar/stellar-sdk` ^15.1.0 & `@stellar/freighter-api` ^6.0.1
+- Network: Testnet
+- UI: Vanilla CSS, Lucide React
 
 ## Setup & Run
 
-### 1. Account Setup & Asset Issuance
-Navigate to the `scripts` directory:
+### 1. Clone the repository
+\`\`\`bash
+git clone https://github.com/LioNyde/Skinry---Character-Skin-Marketplace
+cd Skinry---Character-Skin-Marketplace
+\`\`\`
+
+### 2. Account Setup & Asset Issuance
+Navigate to the \`scripts\` directory:
 \`\`\`bash
 cd scripts
 npm install
@@ -42,8 +45,8 @@ node issue-assets.js   # Mints skins (SKIN01, SKIN02, SKIN03)
 node marketplace-offers.js # Lists skins on SDEX
 \`\`\`
 
-### 2. Run Marketplace Frontend
-Navigate to the `client` directory:
+### 3. Run Marketplace Frontend
+Navigate to the \`client\` directory:
 \`\`\`bash
 cd client
 npm install
@@ -51,8 +54,13 @@ npm run dev
 \`\`\`
 Ensure you have the **Freighter Wallet** extension installed and set to **Testnet**.
 
+## Network Details
+- Network: Testnet
+- Horizon URL: https://horizon-testnet.stellar.org
+- Asset Issuer: GA645QP3GUXULRIK3R3Z2VTVECFWYTHT7YGM2XEEUYRWK7GRXXD6L42A
+
 ## Team
 - LioNyde — @LioNyde
 
-## Novelty Note
-While NFT marketplaces exist on various chains, Skinry focuses on the efficiency and native liquidity of Stellar Classic Assets. By using classic assets instead of complex smart contracts for simple skins, we ensure high performance, low fees, and immediate compatibility with existing Stellar wallets and exchanges.
+## License
+MIT

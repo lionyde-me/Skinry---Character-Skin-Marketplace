@@ -1,33 +1,31 @@
 ## Project Name
-[Your project name]
+Skinry
 
 ## One-Line Description
-[What it does, in one sentence]
+A decentralized marketplace for trading in-game skins as Stellar classic assets.
 
 ## Track
-[One of: Track 1 Remittance & Cross-Border | Track 2 Financial Inclusion & Everyday Payments | Track 3 DeFi, Stablecoins & Real-World Assets | Track 4 AI-Powered Stellar Apps | Track 5 Social Impact | Track 6 Open Innovation]
+Track 3 DeFi, Stablecoins & Real-World Assets
 
 ## Problem It Solves
-[2-4 sentences. What real problem does this address? Who is the user?]
+In-game skins are currently trapped in "walled gardens," meaning players do not truly own the items they purchase and cannot easily trade them outside of specific platforms. This lack of interoperability and liquidity limits the value of digital assets for players. Skinry solves this by issuing skins as Stellar classic assets, allowing them to be freely traded on the Stellar Decentralized Exchange (SDEX).
 
 ## How It Uses Stellar
-[Which Stellar primitives / protocols / anchors / Soroban contracts. Be specific. This maps to Judging criterion 1.]
+Skinry leverages Stellar Classic Assets to represent in-game items, ensuring high performance and low fees. It utilizes the SDEX for decentralized trading, allowing users to buy and sell skins directly against XLM. The project uses the Stellar SDK for issuance and offer management, and SEP-1 for asset metadata.
 
 ## GitHub Repository
-[Link to your public repo. Final code must be on the `main` branch.]
+[https://github.com/LioNyde/Skinry---Character-Skin-Marketplace](https://github.com/LioNyde/Skinry---Character-Skin-Marketplace)
 
 ## Network & Deployment
-- Network: [testnet / mainnet]
-- Live app URL (if any): [link or "runs locally — see README"]
-- Contract IDs / asset issuers (if any): [list, or "N/A"]
+- Network: testnet
+- Live app URL (if any): runs locally — see README
+- Contract IDs / asset issuers (if any): GA645QP3GUXULRIK3R3Z2VTVECFWYTHT7YGM2XEEUYRWK7GRXXD6L42A
 
 ## Team
-- [Full Name] — @[github-username]
-- [Full Name] — @[github-username]
-- [up to 4 members]
+- LioNyde — @LioNyde
 
 ## Novelty Note (optional, for bonus points)
-[Did you check your idea against stellar-300-ideas.md and stellar_repos.txt? What makes yours different from what already exists?]
+While NFT marketplaces exist on various chains, Skinry focuses on the efficiency and native liquidity of Stellar Classic Assets. By using classic assets instead of complex smart contracts for simple skins, we ensure high performance, low fees, and immediate compatibility with existing Stellar wallets and exchanges.
 
 ## Anything Else
-[Optional: known limitations, what you'd build next, mentor shout-outs]
+Future improvements include royalty enforcement via Soroban smart contracts, skin crafting mechanisms, and cross-game metadata standardization.
