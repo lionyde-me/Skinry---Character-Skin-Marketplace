@@ -15,7 +15,7 @@ Skinry leverages the following Stellar primitives:
 - **Classic Assets:** Each skin is represented as a Stellar asset, ensuring compatibility with the entire Stellar ecosystem.
 - **SDEX (Stellar Decentralized Exchange):** Provides a built-in marketplace where skins can be traded against XLM or other assets without a centralized intermediary.
 - **Stellar SDK:** Used for creating asset issuance transactions, setting up trustlines, and managing marketplace offers.
-- **SEP-1 (Stellar Info File):** To provide metadata and branding for the skin assets.
+- **SEP-1 (Stellar Info File):** (Planned) To provide metadata and branding for the skin assets.
 
 ## GitHub Repository
 [https://github.com/LioNyde/Skinry---Character-Skin-Marketplace](https://github.com/LioNyde/Skinry---Character-Skin-Marketplace)
@@ -23,36 +23,13 @@ Skinry leverages the following Stellar primitives:
 ## Network & Deployment
 - Network: Testnet
 - Live app URL: runs locally — see README
-- Contract IDs / asset issuers: GA645QP3GUXULRIK3R3Z2VTVECFWYTHT7YGM2XEEUYRWK7GRXXD6L42A
-
-## Tech Stack
-- Frontend: React + TypeScript (Vite)
-- Stellar SDK: `@stellar/stellar-sdk` & `@stellar/freighter-api`
-- Backend: Node.js (Issuance Scripts)
-
-## Setup & Run
-
-### 1. Account Setup & Asset Issuance
-Navigate to the `scripts` directory:
-\`\`\`bash
-cd scripts
-npm install
-node setup-accounts.js  # Generates and funds Issuer/Distributor
-node issue-assets.js   # Mints skins (SKIN01, SKIN02, SKIN03)
-node marketplace-offers.js # Lists skins on SDEX
-\`\`\`
-
-### 2. Run Marketplace Frontend
-Navigate to the `client` directory:
-\`\`\`bash
-cd client
-npm install
-npm run dev
-\`\`\`
-Ensure you have the **Freighter Wallet** extension installed and set to **Testnet**.
+- Contract IDs / asset issuers: N/A (Using Classic Assets)
 
 ## Team
 - LioNyde — @LioNyde
 
-## Novelty Note
+## Novelty Note (optional, for bonus points)
 While NFT marketplaces exist on various chains, Skinry focuses on the efficiency and native liquidity of Stellar Classic Assets. By using classic assets instead of complex smart contracts for simple skins, we ensure high performance, low fees, and immediate compatibility with existing Stellar wallets and exchanges.
+
+## Anything Else
+Future iterations could include Soroban smart contracts for advanced features like royalty enforcement on secondary sales or "loot box" mechanics.

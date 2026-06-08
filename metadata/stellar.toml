@@ -1,0 +1,31 @@
+# Skinry - Character Skin Marketplace Metadata
+
+[QUOTES]
+ASSET_ISSUER = "GA645QP3GUXULRIK3R3Z2VTVECFWYTHT7YGM2XEEUYRWK7GRXXD6L42A"
+
+[[CURRENCIES]]
+code = "SKIN01"
+issuer = "GA645QP3GUXULRIK3R3Z2VTVECFWYTHT7YGM2XEEUYRWK7GRXXD6L42A"
+display_decimals = 0
+name = "Common Skin"
+desc = "A common character skin for basic equipment."
+conditions = "No restrictions on trade."
+image = "https://placehold.co/400x400?text=SKIN01"
+
+[[CURRENCIES]]
+code = "SKIN02"
+issuer = "GA645QP3GUXULRIK3R3Z2VTVECFWYTHT7YGM2XEEUYRWK7GRXXD6L42A"
+display_decimals = 0
+name = "Rare Skin"
+desc = "A rare character skin with enhanced visual effects."
+conditions = "No restrictions on trade."
+image = "https://placehold.co/400x400?text=SKIN02"
+
+[[CURRENCIES]]
+code = "SKIN03"
+issuer = "GA645QP3GUXULRIK3R3Z2VTVECFWYTHT7YGM2XEEUYRWK7GRXXD6L42A"
+display_decimals = 0
+name = "Legendary Skin"
+desc = "A legendary character skin with unique animations and status."
+conditions = "No restrictions on trade."
+image = "https://placehold.co/400x400?text=SKIN03"
